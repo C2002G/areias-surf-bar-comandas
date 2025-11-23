@@ -110,10 +110,13 @@ coverage/
 *.key
 *.crt
 *.cert
+
+# Arquivos de documentação (não enviar para produção)
 APRESENTACAO-DONO.md
 DEPLOY.md
 README-DEPLOY.md
 TESTES.md
+
 # ===========================================
 # IMPORTANTE: MANTER ESTES ARQUIVOS NO GIT
 # ===========================================
@@ -123,5 +126,3 @@ TESTES.md
 # ✅ sw.js
 # ✅ manifest.json
 # ✅ README.md
-# ✅ DEPLOY.md
-# ✅ TESTES.md
