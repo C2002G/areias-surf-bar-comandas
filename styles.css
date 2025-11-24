@@ -1,6 +1,6 @@
-/* ========================================
+/*
    RESET E CONFIGURAÇÕES BÁSICAS
-   ======================================== */
+   */
 
 * {
   box-sizing: border-box;
@@ -26,9 +26,9 @@ body {
   overflow-x: hidden;
 }
 
-/* ========================================
+/*
    VARIÁVEIS CSS
-   ======================================== */
+   */
 
 :root {
   --primary-color: #2196f3;
@@ -58,9 +58,9 @@ body {
   --font-size-xxl: 1.5rem;
 }
 
-/* ========================================
+/*
    LAYOUT PRINCIPAL
-   ======================================== */
+   */
 
 .header {
   background: linear-gradient(
@@ -101,9 +101,9 @@ body {
   padding: var(--spacing-md);
 }
 
-/* ========================================
+/*
    ANIMAÇÕES
-   ======================================== */
+   */
 
 @keyframes fadeIn {
   from {
@@ -140,9 +140,9 @@ body {
   }
 }
 
-/* ========================================
+/*
    BOTÕES
-   ======================================== */
+   */
 
 .btn {
   display: inline-flex;
@@ -211,9 +211,9 @@ body {
   background: #c82333;
 }
 
-/* ========================================
+/*
    BUSCA E AÇÕES
-   ======================================== */
+   */
 
 .search-box {
   margin-bottom: var(--spacing-md);
@@ -244,9 +244,9 @@ body {
   width: 100%;
 }
 
-/* ========================================
+/*
    LISTA DE COMANDAS
-   ======================================== */
+   */
 
 .commands-list {
   display: flex;
@@ -312,9 +312,9 @@ body {
   font-size: var(--font-size-sm);
 }
 
-/* ========================================
+/*
    ESTADO VAZIO
-   ======================================== */
+   */
 
 .empty-state {
   text-align: center;
@@ -333,9 +333,9 @@ body {
   color: var(--dark-color);
 }
 
-/* ========================================
+/*
    FORMULÁRIOS
-   ======================================== */
+   */
 
 .form-header {
   display: flex;
@@ -397,9 +397,9 @@ body {
   border-color: var(--danger-color);
 }
 
-/* ========================================
+/*
    SELEÇÃO DE PRODUTOS
-   ======================================== */
+   */
 
 .product-selection {
   display: flex;
@@ -466,9 +466,9 @@ body {
   color: var(--primary-color);
 }
 
-/* ========================================
+/*
    GERENCIAMENTO DE ITENS
-   ======================================== */
+   */
 
 .add-item-box {
   display: flex;
@@ -584,9 +584,9 @@ body {
   width: 100%;
 }
 
-/* ========================================
+/*
    VISUALIZAÇÃO DE COMANDA
-   ======================================== */
+   */
 
 .command-details {
   background: white;
@@ -686,9 +686,9 @@ body {
   bottom: var(--spacing-md);
 }
 
-/* ========================================
+/*
    CONFIGURAÇÕES
-   ======================================== */
+   */
 
 .settings-content {
   display: flex;
@@ -718,9 +718,9 @@ body {
   color: var(--danger-color);
 }
 
-/* ========================================
+/*
    MODAL E OVERLAY
-   ======================================== */
+   */
 
 .overlay {
   position: fixed;
@@ -771,9 +771,9 @@ body {
   flex: 1;
 }
 
-/* ========================================
+/*
    TOAST (NOTIFICAÇÕES)
-   ======================================== */
+   */
 
 .toast {
   position: fixed;
@@ -797,9 +797,9 @@ body {
   opacity: 1;
 }
 
-/* ========================================
+/*
    RESPONSIVIDADE
-   ======================================== */
+   */
 
 /* Tablets */
 @media (min-width: 768px) {
@@ -866,9 +866,9 @@ body {
   }
 }
 
-/* ========================================
+/*
    DARK MODE (PREPARADO PARA FUTURA IMPLEMENTAÇÃO)
-   ======================================== */
+   */
 
 @media (prefers-color-scheme: dark) {
   /* Desabilitado por enquanto para manter simplicidade */
@@ -881,9 +881,9 @@ body {
     */
 }
 
-/* ========================================
+/*
    ACESSIBILIDADE
-   ======================================== */
+   */
 
 @media (prefers-reduced-motion: reduce) {
   * {
@@ -904,9 +904,9 @@ body {
   }
 }
 
-/* ========================================
+/*
    PRINT (CASO NECESSÁRIO IMPRIMIR)
-   ======================================== */
+   */
 
 @media print {
   .header,

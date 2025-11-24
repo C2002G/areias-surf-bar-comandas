@@ -6,9 +6,7 @@
 
 "use strict";
 
-// =====================================
 // CONFIGURAÇÕES DO SERVICE WORKER
-// =====================================
 
 const SW_VERSION = "1.0.0";
 const CACHE_NAME = `comandas-cache-v${SW_VERSION}`;
@@ -36,9 +34,7 @@ const CACHE_CONFIG = {
   networkTimeoutSeconds: 3,
 };
 
-// =====================================
 // EVENTOS DO SERVICE WORKER
-// =====================================
 
 /**
  * Evento de instalação do Service Worker
@@ -179,9 +175,7 @@ self.addEventListener("sync", (event) => {
   }
 });
 
-// =====================================
 // ESTRATÉGIAS DE CACHE
-// =====================================
 
 /**
  * Estratégia Cache First
@@ -255,9 +249,7 @@ async function networkFirst(request) {
   }
 }
 
-// =====================================
 // FUNÇÕES AUXILIARES
-// =====================================
 
 /**
  * Determina se uma requisição é para recurso estático
@@ -468,9 +460,7 @@ function requestBackgroundSync() {
   }
 }
 
-// =====================================
 // LOGS E DEBUGGING
-// =====================================
 
 // Log quando o SW é carregado
 console.log(`[SW] Service Worker v${SW_VERSION} carregado`);

@@ -7,9 +7,7 @@
 
 "use strict";
 
-// =====================================
 // CONFIGURAÇÕES E CONSTANTES
-// =====================================
 
 const CONFIG = {
   dbName: "ComandaDB",
@@ -20,9 +18,7 @@ const CONFIG = {
   debounceDelay: 300, // Delay para busca em ms
 };
 
-// =====================================
 // CARDÁPIO - PRODUTOS E CATEGORIAS
-// =====================================
 
 // TODO: Adicionar produtos reais aqui
 const CARDAPIO = {
@@ -190,9 +186,7 @@ const CARDAPIO = {
   // Adicione mais categorias conforme necessário
 };
 
-// =====================================
 // ESTADO GLOBAL DA APLICAÇÃO
-// =====================================
 
 let appState = {
   db: null,
@@ -205,9 +199,7 @@ let appState = {
   tempItems: [], // Lista temporária para novos itens
 };
 
-// =====================================
 // ELEMENTOS DOM
-// =====================================
 
 const elements = {
   // Telas
@@ -272,9 +264,7 @@ const elements = {
   toastText: document.getElementById("toastText"),
 };
 
-// =====================================
 // GERENCIAMENTO DO INDEXEDDB
-// =====================================
 
 /**
  * Inicializa o banco de dados IndexedDB
@@ -410,9 +400,7 @@ function deleteAllCommands() {
   });
 }
 
-// =====================================
 // UTILITÁRIOS
-// =====================================
 
 /**
  * Formata data/hora para exibição
@@ -520,9 +508,7 @@ function calculateTotal(items) {
   }, 0);
 }
 
-// =====================================
 // INTERFACE DO USUÁRIO
-// =====================================
 
 /**
  * Exibe notificação toast
@@ -605,9 +591,7 @@ function navigateToScreen(screenName) {
   }, 100);
 }
 
-// =====================================
 // GERENCIAMENTO DA LISTA DE COMANDAS
-// =====================================
 
 /**
  * Renderiza a lista de comandas
@@ -704,9 +688,7 @@ async function loadCommands() {
   }
 }
 
-// =====================================
 // GERENCIAMENTO DE PRODUTOS
-// =====================================
 
 /**
  * Inicializa o select de categorias
@@ -815,9 +797,7 @@ function updateOrderTotal(items) {
   elements.orderTotal.textContent = formatCurrency(total);
 }
 
-// =====================================
 // GERENCIAMENTO DE COMANDAS
-// =====================================
 
 /**
  * Abre tela para criar nova comanda
@@ -1076,9 +1056,7 @@ function renderCommandDetails(command) {
     `;
 }
 
-// =====================================
 // GERENCIAMENTO DE ITENS
-// =====================================
 
 /**
  * Adiciona novo item à lista
@@ -1313,9 +1291,7 @@ function renderItemsList(items) {
   updateOrderTotal(items);
 }
 
-// =====================================
 // FORMULÁRIO DE COMANDA
-// =====================================
 
 /**
  * Manipula submissão do formulário
@@ -1376,9 +1352,7 @@ async function handleFormSubmit(e) {
   }
 }
 
-// =====================================
 // FUNCIONALIDADE WHATSAPP
-// =====================================
 
 /**
  * Copia comanda formatada para área de transferência
@@ -1447,9 +1421,7 @@ async function copyCommandToClipboard() {
   }
 }
 
-// =====================================
 // CONFIGURAÇÕES E ESTATÍSTICAS
-// =====================================
 
 /**
  * Atualiza estatísticas na tela de configurações
@@ -1481,9 +1453,7 @@ async function deleteAllCommandsConfirm() {
   }
 }
 
-// =====================================
 // EVENT LISTENERS
-// =====================================
 
 /**
  * Configura todos os event listeners da aplicação
@@ -1556,9 +1526,7 @@ function setupEventListeners() {
   });
 }
 
-// =====================================
 // INICIALIZAÇÃO
-// =====================================
 
 /**
  * Inicializa a aplicação
@@ -1589,9 +1557,7 @@ async function initApp() {
   }
 }
 
-// =====================================
 // SERVICE WORKER
-// =====================================
 
 /**
  * Registra o service worker para funcionalidade PWA
@@ -1607,9 +1573,7 @@ async function registerServiceWorker() {
   }
 }
 
-// =====================================
 // INICIALIZAÇÃO DA APLICAÇÃO
-// =====================================
 
 // Aguarda DOM ser carregado completamente
 document.addEventListener("DOMContentLoaded", async () => {
